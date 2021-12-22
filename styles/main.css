@@ -1,0 +1,697 @@
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url(../fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  background: url(../images/Background.png) no-repeat center top/cover;
+  padding-top: 40px;
+  height: 700px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav .logo {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.nav .login {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+}
+
+.nav .login-log {
+  padding: 10px 22px;
+  border: 2px solid white;
+  border-radius: 50px;
+  margin-left: 19px;
+}
+
+.shar {
+  width: 470px;
+  height: 126px;
+}
+
+.shar-share {
+  text-align: center;
+  line-height: 63px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 52px;
+  color: white;
+}
+
+.and {
+  text-align: center;
+  margin-top: 28.5px;
+}
+
+.and-find {
+  font-size: 24px;
+  line-height: 24.5px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.fi {
+  margin-top: 33px;
+  text-align: center;
+}
+
+.fi-find {
+  border: 1px solid #FF4E50;
+  border-radius: 50px;
+  background-color: #FF4E50;
+  padding: 9px 50px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.holiday {
+  padding-top: 178px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.lego {
+  text-align: center;
+  padding-top: 89px;
+  padding-bottom: 25px;
+}
+
+.lego-how {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 300px;
+  height: 400px;
+  margin-right: 20px;
+  margin-top: 10px;
+  background: url(../images/rog.png) no-repeat center/cover;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 300px;
+  height: 400px;
+  margin-right: 20px;
+  margin-top: 10px;
+  background: url(../images/tre.png) no-repeat center/cover;
+}
+
+.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 300px;
+  height: 400px;
+  margin-top: 10px;
+  background: url(../images/Step-image.png) no-repeat center/cover;
+}
+
+.text {
+  margin-left: 25px;
+}
+
+.text-tru {
+  margin-top: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.text-and {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 21px;
+}
+
+.step {
+  background-color: #FF4E50;
+  border-radius: 40px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: white;
+  padding: 8px 20px;
+}
+
+.global {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+.global .next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.global .next-for {
+  width: 221px;
+  height: 205px;
+  margin: 0 9.5px;
+  text-align: center;
+}
+
+.global .next-for .name {
+  margin-top: 17px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.global .next-for .tsmall {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 12px;
+}
+
+.global .next-for .one {
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  background: url(../images/one.png) no-repeat center/cover;
+}
+
+.global .next-for .one .music {
+  width: 16px;
+  height: 16px;
+  background-color: #FF4E50;
+  padding: 8px;
+  border-radius: 20px;
+  margin-top: 88px;
+  margin-left: 87px;
+}
+
+.global .next-for .two {
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  background: url(../images/two.png) no-repeat center/cover;
+}
+
+.global .next-for .two .brush {
+  width: 16px;
+  height: 16px;
+  background-color: #19D4CA;
+  padding: 8px;
+  border-radius: 20px;
+  margin-top: 88px;
+  margin-left: 87px;
+}
+
+.global .next-for .tree {
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  background: url(../images/tree.png) no-repeat center/cover;
+}
+
+.global .next-for .tree .camera {
+  width: 16px;
+  height: 16px;
+  background-color: #FFA710;
+  padding: 8px;
+  border-radius: 20px;
+  margin-top: 88px;
+  margin-left: 87px;
+}
+
+.global .next-for .forr {
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  background: url(../images/for.png) no-repeat center/cover;
+}
+
+.global .next-for .forr .shape {
+  width: 16px;
+  height: 16px;
+  background-color: #667DF3;
+  padding: 8px;
+  border-radius: 20px;
+  margin-top: 88px;
+  margin-left: 87px;
+}
+
+.button {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.button .partners {
+  text-decoration: none;
+  color: #FF4E50;
+  border: 2px solid #FF4E50;
+  border-radius: 20px;
+  padding: 12px 30px;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 17px;
+}
+
+.general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.bot {
+  width: 300px;
+  height: 310px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+}
+
+.cop {
+  width: 620px;
+  height: 310px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+}
+
+.sold1 {
+  background: url(../images/Sport.png) no-repeat center/cover;
+}
+
+.sold2 {
+  background: url(../images/Healath.png) no-repeat center/cover;
+}
+
+.sold3 {
+  background: url(../images/Extreme.png) no-repeat center/cover;
+}
+
+.sold4 {
+  background: url(../images/Games.png) no-repeat center/cover;
+}
+
+.sold5 {
+  background: url(../images/Culture.png) no-repeat center/cover;
+}
+
+.sold6 {
+  background: url(../images/Cult.png) no-repeat center/cover;
+}
+
+.sold7 {
+  background: url(../images/tor.png) no-repeat center/cover;
+}
+
+.sports {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+}
+
+.bottom-tom {
+  margin-top: 10px;
+}
+
+.bottom-tom .what {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 14px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.cod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+}
+
+.cod input {
+  width: 299px;
+  height: 40px;
+  padding-left: 15px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 16px;
+  font-weight: 300;
+  color: #999999;
+  margin-right: 10px;
+}
+
+.cod .search {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FF4E50;
+  border-radius: 30px;
+  padding: 15px 40px;
+  color: white;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.red-line {
+  width: 100%;
+  height: 2px;
+  background-color: #FF4E50;
+  margin-top: 100px;
+}
+
+.dreams {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 36px;
+}
+
+.bingo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 544px;
+}
+
+.sleep {
+  display: -ms-grid;
+  display: grid;
+}
+
+.port {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  color: #444;
+}
+
+.stop {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 300;
+  color: #999999;
+}
+
+.by {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  color: #cccccc;
+  margin-left: 15px;
+}
+
+.map {
+  width: 83px;
+  height: 12px;
+  margin-top: 7px;
+}
+
+.are {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #FF4E50;
+}
+
+@media screen and (max-width: 990px) {
+  .container {
+    width: 700px;
+  }
+  .next {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .bot {
+    width: 236px;
+  }
+  .cop {
+    width: 492px;
+  }
+  .sold2 {
+    margin-left: 20px;
+  }
+  .sold3 {
+    margin-left: 20px;
+  }
+  .sold5 {
+    margin: 0 0 0 20px;
+  }
+  .sold6 {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .header {
+    height: 540px;
+  }
+  .container {
+    width: 300px;
+  }
+  .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+  }
+  .button .partners {
+    padding: 12px 80px;
+  }
+  .logo {
+    margin-top: 97px;
+  }
+  .holiday {
+    padding-top: 26px;
+  }
+  .shar {
+    width: 272px;
+    height: 100px;
+  }
+  .shar-share {
+    font-size: 30px;
+  }
+  .foto {
+    display: block;
+  }
+  .left {
+    width: 300px;
+    height: 240px;
+  }
+  .center {
+    width: 300px;
+    height: 240px;
+  }
+  .right {
+    width: 300px;
+    height: 240px;
+  }
+  .bot {
+    width: 300px;
+    height: 120px;
+    margin: 20px 0 0 0;
+  }
+  .cop {
+    width: 300px;
+    height: 120px;
+  }
+  .sold5 {
+    margin: 20px 0 0 0;
+  }
+  .general {
+    display: block;
+  }
+  .cod {
+    display: block;
+    text-align: center;
+  }
+  .cod input {
+    width: 280px;
+    margin-bottom: 25px;
+  }
+  .cod .search {
+    padding: 15px 90px;
+  }
+  .dreams {
+    display: block;
+    text-align: center;
+  }
+  .bingo {
+    display: block;
+    width: 300px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sleep {
+    display: block;
+  }
+  .areto {
+    margin: 20px 0;
+  }
+  .stop {
+    margin: 5px 10px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
